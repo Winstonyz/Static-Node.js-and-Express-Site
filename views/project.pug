@@ -1,0 +1,44 @@
+extends layout.pug
+
+block content
+
+  nav.nav
+    a(href='/')
+      span &larr;
+      |  Back
+
+  article.portfolio-projects
+    .inner-wrapper.flex-row-wrap.two-col
+      .project-info-box.box
+
+        h1 #{project.project_name}
+
+        p #{project.description}
+
+      .project-tech-links-box.box
+        h6 Technologies
+        ul
+
+          each tech in project.technologies
+            li #{tech}
+
+        a.btn-link(href=`${project.live_link}`, target = '_blank') Live Demo
+        a.btn-link(href=`${project.github_link}`, target = '_blank') GitHub Repo
+
+    .project-img-box.box
+      if(project.project_name === 'Python Games')
+        img.project-img(src=`${project.image_urls[0]}`, alt='')
+        img.project-img(src=`${project.image_urls[1]}`, alt='')
+        img.project-img(src=`${project.image_urls[2]}`, alt='')
+        img.project-img(src=`${project.image_urls[3]}`, alt='')
+        img.project-img(src=`${project.image_urls[4]}`, alt='')
+        img.project-img(src=`${project.image_urls[5]}`, alt='')
+      else
+        img.project-img(src=`${project.image_urls[0]}`, alt='')
+        img.project-img(src=`${project.image_urls[1]}`, alt='')
+      
+
+    nav.nav
+      a(href='/')
+        span &larr;
+        |  Back
