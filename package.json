@@ -1,0 +1,23 @@
+{
+  "name": "treehouseproject6",
+  "version": "1.0.0",
+  "description": "a portfolio website that showcases my skills as a webdeveloper",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Winstonyz/TreehouseProject6.git"
+  },
+  "author": "Winton Tang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Winstonyz/TreehouseProject6/issues"
+  },
+  "homepage": "https://github.com/Winstonyz/TreehouseProject6#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pug": "^3.0.2"
+  }
+}
